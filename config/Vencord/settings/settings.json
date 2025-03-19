@@ -578,18 +578,7 @@
             "enabled": false
         },
         "VcNarrator": {
-            "enabled": true,
-            "volume": 1,
-            "rate": 1,
-            "sayOwnName": false,
-            "latinOnly": false,
-            "joinMessage": "{{USER}} joined",
-            "leaveMessage": "{{USER}} left",
-            "moveMessage": "{{USER}} moved to {{CHANNEL}}",
-            "muteMessage": "{{USER}} Muted",
-            "unmuteMessage": "{{USER}} unmuted",
-            "deafenMessage": "{{USER}} deafened",
-            "undeafenMessage": "{{USER}} undeafened"
+            "enabled": false
         },
         "VencordToolbox": {
             "enabled": false
@@ -657,6 +646,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1741730238929
+        "settingsSyncVersion": 1742366774957
     }
 }
