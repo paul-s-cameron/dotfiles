@@ -1,7 +1,10 @@
 - defaults:
     link:
-        force: true
-        relink: true
+      force: true
+      create: true
+      relink: true
+    shell:
+      stderr: true
 
 - clean:
     ~/:
@@ -9,21 +12,28 @@
     ~/.config:
       recursive: true
 
+- shell:
+    - [sh pre-install.sh, Running pre installation script]
+
+- create:
+    - ~/downloads
+    - ~/wallpapers
+    - ~/.oh-my-zsh/custom/
+    - ~/.oh-my-zsh/custom/plugins
+
 - link:
     ~/.config/hypr: vim
     ~/.config/dunst: config/dunst
     ~/.config/ghostty: config/ghostty
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
-    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes
     ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions/
+    ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
     ~/.zshrc: zshrc
     ~/.scripts: scripts
 
-- create:
-    - ~/downloads
-    - ~/wallpapers
-
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
-  - [chmod +x -R ~/.scripts, Authorizing scripts]
+    - [chmod +x -R ~/.scripts, Authorizing scripts]
+    - [git submodule update --init --recursive, Installing submodules]

@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR=nvim
+export PATH="$HOME/.scripts:$PATH"
 
 eval "$(zoxide init zsh)"
 
