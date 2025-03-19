@@ -1,3 +1,5 @@
 {
-  "theme.font.size": "0.8rem"
+  "theme.font.size": "0.8rem",
+  "theme.bar.menus.menu.dashboard.scaling": 80,
+  "scalingPriority": "both"
 }
