@@ -44,3 +44,4 @@
 - shell:
     - [chmod +x -R ~/.scripts, Authorizing scripts]
     - [git submodule update --init --recursive, Installing submodules]
+    - [systemctl --user enable --now waybar, Enabling waybar]
