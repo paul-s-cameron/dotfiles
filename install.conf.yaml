@@ -18,8 +18,10 @@
     - [sh pre-install.sh, Running pre installation script]
 
 - create:
-    - ~/downloads
-    - ~/wallpapers
+    - ~/Downloads
+    - ~/Wallpapers
+    - ~/Pictures
+    - ~/Videos
     - ~/.oh-my-zsh/custom/
     - ~/.oh-my-zsh/custom/plugins
     - ~/.config/Vencord/
