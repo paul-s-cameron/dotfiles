@@ -23,6 +23,7 @@
     - ~/.oh-my-zsh/custom/
     - ~/.oh-my-zsh/custom/plugins
     - ~/.config/Vencord/
+    - ~/.config/systemd/user/
     - ~/.local/share/rofi
 
 - link:
@@ -32,6 +33,8 @@
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
     ~/.config/rofi: config/rofi
+    ~/.config/hyprpanel: config/hyprpanel
+    ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.local/share/rofi/themes: themes/rofi
     ~/.config/Vencord/settings: config/Vencord/settings
     ~/.config/Vencord/themes: config/Vencord/themes
@@ -49,4 +52,6 @@
 - shell:
     - [chmod +x -R ~/.scripts, Authorizing scripts]
     - [git submodule update --init --recursive, Installing submodules]
-    - [systemctl --user enable --now waybar, Enabling waybar]
+    - [systemctl --user enable --now hyprpolkitagent, Enabling hyrpolkitagent]
+    - [systemctl --user enable --now hypridle, Enabling hypridle]
+    - [systemctl --user enable --now hyprpanel, Enabling hypridle]

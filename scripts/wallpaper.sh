@@ -46,7 +46,7 @@ reload_wallpaper() {
     exit 1
   fi
 
-  pkill mpvpaper
+  pkill -9 mpvpaper
   mpvpaper -p -f -o "--input-ipc-server=/tmp/mpv-socket --loop --loop-playlist --no-audio --panscan=1.0 --playlist=$playlist_path" '*'
   echo "Wallpaper playlist reloaded from: $playlist_path"
 }
@@ -82,7 +82,9 @@ case "$1" in
       exit 1
     fi
 
-    set_wallpaper "$2"
+    ABS_PATH=$(realpath "$2")
+
+    set_wallpaper "$ABS_PATH"
     ;;
   add)
     # Expects a path to mpv compatible file (optional 'save' parameter)

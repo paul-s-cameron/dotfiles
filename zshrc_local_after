@@ -19,8 +19,5 @@ export LANG=en_US.UTF-8
 # export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
 # export PATH=$DYLD_LIBRARY_PATH:$PATH
 
-# Thefuck setup
-eval "$(thefuck --alias)"
-
 # bash $HOME/.motd
 
