@@ -100,6 +100,11 @@ prepend_keymap = [
 	{ on = "u", run = "undo" },
 ]
 
+prepend_prefetchers = [
+	{ id = "git", name = "*", run = "git" },
+	{ id = "git", name = "*/", run = "git" }
+]
+
 prepend_preloaders = [
 	# Replace magick, image, video with mediainfo
 	{ mime = "{audio,video,image}/*", run = "mediainfo" },
