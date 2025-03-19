@@ -1,7 +1,7 @@
 # Initialize completion
 autoload -U compinit && compinit
 
-# VIM as default editor
+# Default editors
 export VISUAL=subl
 export EDITOR=nvim
 
