@@ -39,6 +39,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
     ~/.zshrc: zshrc
     ~/.scripts: scripts
+    ~/.p10k.zsh: p10k.zsh
 
 - shell:
     - [chmod +x -R ~/.scripts, Authorizing scripts]
