@@ -1,0 +1,29 @@
+- defaults:
+    link:
+        force: true
+        relink: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+
+- link:
+    ~/.config/hypr: vim
+    ~/.config/dunst: config/dunst
+    ~/.config/ghostty: config/ghostty
+    ~/.config/waybar: config/waybar
+    ~/.config/yazi: config/yazi
+    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes
+    ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
+    ~/.zshrc: zshrc
+    ~/.scripts: scripts
+
+- create:
+    - ~/downloads
+    - ~/wallpapers
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [chmod +x -R ~/.scripts, Authorizing scripts]
