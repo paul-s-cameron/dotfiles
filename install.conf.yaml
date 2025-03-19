@@ -28,7 +28,6 @@
 
 - link:
     ~/.config/hypr: config/hypr
-    ~/.config/dunst: config/dunst
     ~/.config/ghostty: config/ghostty
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
