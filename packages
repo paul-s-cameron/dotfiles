@@ -3,7 +3,7 @@ downgrade
 sublime-text-4
 brave-bin
 waybar
-yazi
+yazi-nightly-git
 zsh
 zoxide
 ags-hyprpanel-git
@@ -19,3 +19,5 @@ thefuck
 discord
 code
 mpv
+fd
+ripgrep
