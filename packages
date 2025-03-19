@@ -3,7 +3,7 @@ downgrade
 sublime-text-4
 brave-bin
 waybar
-yazi-nightly-git
+yazi-nightly-bin
 zsh
 zoxide
 ags-hyprpanel-git
@@ -23,3 +23,5 @@ fd
 ripgrep
 gifski
 mediainfo
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
