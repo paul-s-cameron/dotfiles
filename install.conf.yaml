@@ -23,6 +23,7 @@
     - ~/.oh-my-zsh/custom/
     - ~/.oh-my-zsh/custom/plugins
     - ~/.config/Vencord/
+    - ~/.local/share/rofi
 
 - link:
     ~/.config/hypr: config/hypr
@@ -31,6 +32,7 @@
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
     ~/.config/rofi: config/rofi
+    ~/.local/share/rofi/themes: themes/rofi
     ~/.config/Vencord/settings: config/Vencord/settings
     ~/.config/Vencord/themes: config/Vencord/themes
     ~/.config/Vencord/vencord-settings.json: config/Vencord/vencord-settings.json
