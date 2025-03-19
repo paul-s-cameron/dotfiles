@@ -1,3 +1,8 @@
+# Allow local customizations in the ~/.zshrc_local_before file
+if [ -f ~/.zshrc_local_before ]; then
+    source ~/.zshrc_local_before
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -77,7 +82,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting archlinux rust history jsontools encode64 docker colorize jump lol torrent)
+plugins=(git zsh-completions zsh-autosuggestions zsh-syntax-highlighting archlinux rust history jsontools encode64 docker colorize jump lol torrent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,3 +132,8 @@ function y() {
   fi
   rm -f -- "$tmp"
 }
+
+# Allow local customizations in the ~/.zshrc_local_after file
+if [ -f ~/.zshrc_local_after ]; then
+    source ~/.zshrc_local_after
+fi
