@@ -30,6 +30,7 @@
     ~/.config/ghostty: config/ghostty
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
+    ~/.config/rofi: config/rofi
     ~/.config/Vencord/settings: config/Vencord/settings
     ~/.config/Vencord/themes: config/Vencord/themes
     ~/.config/Vencord/vencord-settings.json: config/Vencord/vencord-settings.json

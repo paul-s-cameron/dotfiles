@@ -10,7 +10,7 @@ zoxide
 waybar
 mpvpaper
 dolphin
-wofi
+rofi-wayland
 github-cli
 neovim
 thefuck
