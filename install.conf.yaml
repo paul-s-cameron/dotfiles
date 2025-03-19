@@ -32,6 +32,7 @@
     ~/.config/yazi: config/yazi
     ~/.config/Vencord/settings: config/Vencord/settings
     ~/.config/Vencord/themes: config/Vencord/themes
+    ~/.config/Vencord/vencord-settings.json: config/Vencord/vencord-settings.json
     ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
     ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions/
