@@ -155,3 +155,4 @@ configuration {
       sorting-method:    "name";
   }
 }
+@theme "rounded-nord-dark"
