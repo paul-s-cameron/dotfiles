@@ -25,7 +25,7 @@
     - ~/.config/Vencord/
 
 - link:
-    ~/.config/hypr: vim
+    ~/.config/hypr: config/hypr
     ~/.config/dunst: config/dunst
     ~/.config/ghostty: config/ghostty
     ~/.config/waybar: config/waybar
