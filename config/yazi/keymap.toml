@@ -1,0 +1,29 @@
+[[manager.prepend_keymap]]
+on = [ "g", "d" ]
+run = "cd ~/.dotfiles"
+desc = "Go to ~/.dotfiles"
+
+[[manager.prepend_keymap]]
+on = [ "g", "c" ]
+run = "cd ~/.config"
+desc = "Go to ~/.config"
+
+[[manager.prepend_keymap]]
+on = [ "g", "t" ]
+run = "arrow top"
+desc = "Move cursor to the top"
+
+[[manager.prepend_keymap]]
+on = [ "g", "g" ]
+run = "plugin vcs-files"
+desc = "Show Git file changes"
+
+[[manager.prepend_keymap]]
+on = "<C-d>"
+run = "plugin diff"
+desc = "Diff the selected with the hovered file"
+
+[[manager.prepend_keymap]]
+on = "<C-g>"
+run = "plugin lazygit"
+desc = "Open lazygit"

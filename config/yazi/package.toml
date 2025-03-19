@@ -33,5 +33,20 @@ use = "AnirudhG07/rich-preview"
 rev = "2559e5f"
 hash = "c9a3d0731e7d7340e2c6d6126b1f3aa3"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:vcs-files"
+rev = "2730199"
+hash = "5e85dd0baca18119f4d712d81b09eb7c"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:diff"
+rev = "2730199"
+hash = "7a08e303167d5b655c06da6d570f0333"
+
+[[plugin.deps]]
+use = "Lil-Dank/lazygit"
+rev = "9f924e3"
+hash = "2b0c33928986f126d5c5a4cac31a6b46"
+
 [flavor]
 deps = []
