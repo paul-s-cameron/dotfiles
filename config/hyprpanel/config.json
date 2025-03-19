@@ -1,5 +1,6 @@
 {
   "theme.font.size": "0.8rem",
   "theme.bar.menus.menu.dashboard.scaling": 80,
-  "scalingPriority": "both"
+  "scalingPriority": "both",
+  "wallpaper.image": "~/Wallpapers/firewatch.png"
 }
