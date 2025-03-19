@@ -40,6 +40,7 @@
     ~/.zshrc: zshrc
     ~/.scripts: scripts
     ~/.p10k.zsh: p10k.zsh
+    ~/.gitconfig: gitconfig
 
 - shell:
     - [chmod +x -R ~/.scripts, Authorizing scripts]
