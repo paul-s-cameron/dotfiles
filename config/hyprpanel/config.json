@@ -2,5 +2,16 @@
   "theme.font.size": "0.8rem",
   "theme.bar.menus.menu.dashboard.scaling": 80,
   "scalingPriority": "both",
-  "wallpaper.image": "~/Wallpapers/firewatch.png"
+  "wallpaper.image": "",
+  "theme.bar.margin_sides": "0.6em",
+  "theme.bar.floating": true,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "theme.bar.buttons.workspaces.enableBorder": true,
+  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.showApplicationIcons": true,
+  "bar.workspaces.numbered_active_indicator": "underline",
+  "theme.bar.border.width": "0.15em",
+  "theme.bar.enableShadow": true,
+  "theme.bar.outer_spacing": "0.4em"
 }
