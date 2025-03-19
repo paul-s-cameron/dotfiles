@@ -14,6 +14,8 @@
 
 - shell:
     - [sh pre-install.sh, Running pre installation script]
+    - [if ! hash yay 2>/dev/null; then sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd .. && rm -r yay; fi, Installing yay]
+    - [yay -S --needed --noconfirm - < ~/.dotfiles/packages, Installing packages]
 
 - create:
     - ~/downloads
