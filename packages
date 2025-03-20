@@ -1,6 +1,7 @@
 7zip
 ags-hyprpanel-git
 alsa-utils
+bitwarden
 bluez
 bluez-utils
 brave-bin
@@ -23,6 +24,7 @@ mediainfo
 mpv
 mpvpaper
 mtools
+mullvad-vpn-bin
 nano
 neofetch
 neovim
@@ -41,6 +43,7 @@ sddm-git
 slurp
 sof-firmware
 sublime-text-4
+swww
 thefuck
 ttf-dejavu
 vim
