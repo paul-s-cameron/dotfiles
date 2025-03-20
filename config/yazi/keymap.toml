@@ -32,3 +32,12 @@ desc = "Open lazygit"
 on = "<C-y>"
 run = ["plugin copy-file-contents"]
 desc = "Copy contents of file"
+
+[[manager.prepend_keymap]]
+on  = "M"
+run = "plugin mount"
+
+[[manager.prepend_keymap]]
+on = ["C"]
+run = "plugin ouch --args=zip"
+desc = "Compress with ouch"

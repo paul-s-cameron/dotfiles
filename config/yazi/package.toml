@@ -63,6 +63,11 @@ use = "hankertrix/augment-command"
 rev = "e4b2225"
 hash = "a8a1927e911080120847e813dbc39bad"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "2730199"
+hash = "dd97eede8e20e59cd2604e8006e470e2"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
 rev = "68326b4"
