@@ -1,16 +1,72 @@
 {
-  "theme.font.size": "0.8rem",
-  "theme.bar.menus.menu.dashboard.scaling": 80,
+  "theme.font.size": "0.7rem",
+  "theme.bar.menus.menu.dashboard.scaling": 85,
   "scalingPriority": "both",
-  "theme.bar.margin_sides": "0.6em",
+  "theme.bar.margin_sides": "0.5em",
   "theme.bar.floating": true,
-  "bar.workspaces.show_icons": false,
-  "bar.workspaces.show_numbered": false,
   "theme.bar.buttons.workspaces.enableBorder": true,
+  "bar.customModules.scrollSpeed": 5,
   "bar.workspaces.showWsIcons": true,
   "bar.workspaces.showApplicationIcons": true,
   "bar.workspaces.numbered_active_indicator": "underline",
   "theme.bar.border.width": "0.15em",
   "theme.bar.enableShadow": true,
-  "theme.bar.outer_spacing": "0.4em"
+  "theme.bar.outer_spacing": "0.4em",
+  "menus.power.lowBatteryNotification": true,
+  "bar.customModules.updates.pollingInterval": 21600000,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media",
+        "clock",
+        "battery"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "systray",
+        "cpu",
+        "ram",
+        "hyprsunset",
+        "updates",
+        "notifications"
+      ]
+    },
+    "1": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    },
+    "2": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "volume",
+        "clock",
+        "notifications"
+      ]
+    }
+  }
 }
