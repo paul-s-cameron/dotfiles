@@ -29,18 +29,16 @@
     - ~/.local/share/rofi
 
 - link:
-    ~/.config/hypr: config/hypr
-    ~/.config/ghostty: config/ghostty
-    ~/.config/waybar: config/waybar
-    ~/.config/yazi: config/yazi
-    ~/.config/rofi: config/rofi
-    ~/.config/hyprpanel: config/hyprpanel
+    ~/.local/share/rofi/themes/:
+        glob: true
+        path: themes/rofi/*
+    ~/.config/:
+        glob: true
+        path: config/*
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
-    ~/.local/share/rofi/themes: themes/rofi
-    ~/.local/share/sddm/themes: themes/sddm
-    ~/.config/Vencord/settings: config/Vencord/settings
-    ~/.config/Vencord/themes: config/Vencord/themes
-    ~/.config/Vencord/vencord-settings.json: config/Vencord/vencord-settings.json
+    ~/.config/Vencord/settings: Vencord/settings
+    ~/.config/Vencord/themes: Vencord/themes
+    ~/.config/Vencord/vencord-settings.json: Vencord/vencord-settings.json
     ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
     ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions/

@@ -32,6 +32,9 @@ pipewire
 pipewire-jack
 pipewire-pulse
 power-profiles-daemon
+qt5-quickcontrols2
+qt6-declarative
+qt6-svg
 ripgrep
 rofi-wayland
 sddm-git
