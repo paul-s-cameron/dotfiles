@@ -4,6 +4,7 @@ autoload -U compinit && compinit
 # Default editors
 export VISUAL=subl
 export EDITOR=nvim
+export CODE=code
 
 # locale settings
 export LC_ALL=en_US.UTF-8
