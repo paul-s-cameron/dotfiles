@@ -53,5 +53,12 @@ use = "yazi-rs/plugins:git"
 rev = "2730199"
 hash = "e0d2c8d7e7afe5b82270367098d1a821"
 
-[flavor]
-deps = []
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "31167ed"
+hash = "a04e157148549bacbb2831aab0e6e8cb"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "68326b4"
+hash = "53e1f10ae0f6abd406e463fceca8622a"
