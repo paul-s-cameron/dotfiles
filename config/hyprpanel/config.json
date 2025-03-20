@@ -19,7 +19,8 @@
       "left": [
         "dashboard",
         "workspaces",
-        "windowtitle"
+        "windowtitle",
+        "systray"
       ],
       "middle": [
         "media",
@@ -30,7 +31,6 @@
         "volume",
         "network",
         "bluetooth",
-        "systray",
         "cpu",
         "ram",
         "hyprsunset",
