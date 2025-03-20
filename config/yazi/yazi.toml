@@ -89,6 +89,16 @@ image_alloc      = 536870912  # 512MB
 image_bound      = [ 0, 0 ]
 suppress_preload = false
 
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
+
 [plugin]
 fetchers = [
 	# Mimetype
@@ -100,11 +110,6 @@ prepend_keymap = [
 	{ on = ["<C-e>"], run = "seek 5" },
 	{ on = ["<C-y>"], run = "seek -5" },
 	{ on = "u", run = "undo" },
-]
-
-prepend_prefetchers = [
-	{ id = "git", name = "*", run = "git" },
-	{ id = "git", name = "*/", run = "git" }
 ]
 
 prepend_preloaders = [
