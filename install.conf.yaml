@@ -37,6 +37,7 @@
     ~/.config/hyprpanel: config/hyprpanel
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.local/share/rofi/themes: themes/rofi
+    ~/.local/share/sddm/themes: themes/sddm
     ~/.config/Vencord/settings: config/Vencord/settings
     ~/.config/Vencord/themes: config/Vencord/themes
     ~/.config/Vencord/vencord-settings.json: config/Vencord/vencord-settings.json
