@@ -37,7 +37,7 @@
         path: config/*
     ~/.config/Mullvad VPN/gui_settings.json: Mullvad/gui_settings.json
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
-    ~/.config/Vencord/settings: Vencord/settings
+    ~/.config/Vencord/settings/settings.json: Vencord/settings/settings.json
     ~/.config/Vencord/themes: Vencord/themes
     ~/.config/Vencord/vencord-settings.json: Vencord/vencord-settings.json
     ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
