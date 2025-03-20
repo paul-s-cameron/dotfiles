@@ -2,7 +2,6 @@
   "theme.font.size": "0.8rem",
   "theme.bar.menus.menu.dashboard.scaling": 80,
   "scalingPriority": "both",
-  "wallpaper.image": "",
   "theme.bar.margin_sides": "0.6em",
   "theme.bar.floating": true,
   "bar.workspaces.show_icons": false,
