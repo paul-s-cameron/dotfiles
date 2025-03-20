@@ -35,6 +35,7 @@
     ~/.config/:
         glob: true
         path: config/*
+    ~/.config/Mullvad VPN/gui_settings.json: Mullvad/gui_settings.json
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.config/Vencord/settings: Vencord/settings
     ~/.config/Vencord/themes: Vencord/themes
@@ -53,6 +54,7 @@
 - shell:
     - [chmod +x -R ~/.scripts, Authorizing scripts]
     - [git submodule update --init --recursive, Installing submodules]
-    - [systemctl --user enable --now hyprpolkitagent, Enabling hyrpolkitagent]
-    - [systemctl --user enable --now hypridle, Enabling hypridle]
-    - [systemctl --user enable --now hyprpanel, Enabling hypridle]
+    - [systemctl --user enable --now hyprpolkitagent, Enabling hyrpolkitagent service]
+    - [systemctl --user enable --now hypridle, Enabling hypridle service]
+    - [systemctl --user enable --now hyprpanel, Enabling hypridle service]
+    - [systemctl enable --now jackett, Enabling jackett service]

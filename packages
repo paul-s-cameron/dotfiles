@@ -18,6 +18,7 @@ github-cli
 grim
 htop
 hyprland-meta-git
+jackett
 man-db
 man-pages
 mediainfo
@@ -34,10 +35,12 @@ pipewire
 pipewire-jack
 pipewire-pulse
 power-profiles-daemon
+qbittorrent
 qt5-quickcontrols2
 qt6-declarative
 qt6-svg
 ripgrep
+rofi-cuff-git
 rofi-wayland
 sddm-git
 slurp
