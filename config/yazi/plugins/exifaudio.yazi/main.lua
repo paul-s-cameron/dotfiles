@@ -185,7 +185,10 @@ end
 function M:preload(job)
 	local cache = ya.file_cache(job)
 	if not cache or fs.cha(cache) then
-		return false
+		if not ya.__250127 then -- TODO: remove this
+			return 1
+		end
+		return true
 	end
 
 	local mediainfo_template = 'General;"\
@@ -222,7 +225,10 @@ Channels: %Channel(s)%"\
 		:output()
 
 	if not output then
-		return false
+		if not ya.__250127 then -- TODO: remove this
+			return 0
+		end
+		return true, Err("Couldn't extract cover art, error: %s", err)
 	end
 
 	return fs.write(cache, output.stdout) and true or false

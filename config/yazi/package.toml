@@ -10,13 +10,13 @@ hash = "cdc65cfe4e60e1bf5afe5769d074fa9c"
 
 [[plugin.deps]]
 use = "Sonico98/exifaudio"
-rev = "de526f3"
-hash = "c2a8633171355b6e482a96a739a446c1"
+rev = "7ff7141"
+hash = "666ccba55119fba4c25b8ad354b2855c"
 
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "f565c5a"
-hash = "15d0dbb4e9ba84eb1f2dbb8e9e249bf6"
+rev = "447fe95"
+hash = "dcaebc8bc261206f6b59e2c67464af5"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
@@ -58,10 +58,10 @@ use = "AnirudhG07/plugins-yazi:copy-file-contents"
 rev = "524c52c"
 hash = "27c50e6bc15c09096505b805b238ade0"
 
-[[flavor.deps]]
-use = "dangooddd/kanagawa"
-rev = "31167ed"
-hash = "a04e157148549bacbb2831aab0e6e8cb"
+[[plugin.deps]]
+use = "hankertrix/augment-command"
+rev = "e4b2225"
+hash = "a8a1927e911080120847e813dbc39bad"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
