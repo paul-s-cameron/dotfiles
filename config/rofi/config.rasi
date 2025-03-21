@@ -155,4 +155,9 @@ configuration {
       sorting-method:    "name";
   }
 }
+
 @theme "rounded-nord-dark"
+
+window {
+  width: 50%;
+}
