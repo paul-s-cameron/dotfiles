@@ -42,12 +42,15 @@ qt6-svg
 ripgrep
 rofi-cuff-git
 rofi-wayland
+rustdesk-bin
 sddm-git
 slurp
 sof-firmware
 speedtest-cli
 sublime-text-4
 thefuck
+timeshift
+timeshift-autosnap
 ttf-dejavu
 vim
 waybar
@@ -55,6 +58,7 @@ wf-recorder
 wl-clip-persist
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
+xorg-xhost
 yazi-nightly-bin
 zoxide
 zsh
