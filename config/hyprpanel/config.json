@@ -1,42 +1,49 @@
 {
   "scalingPriority": "both",
+  "bar.autoHide": "fullscreen",
   "bar.customModules.scrollSpeed": 5,
   "bar.workspaces.showWsIcons": true,
   "bar.workspaces.showApplicationIcons": true,
   "bar.workspaces.numbered_active_indicator": "underline",
   "bar.customModules.updates.pollingInterval": 21600000,
-  "theme.font.size": "0.7rem",
-  "theme.bar.menus.menu.dashboard.scaling": 85,
+  "theme.font.size": "0.75rem",
+  "theme.bar.menus.menu.dashboard.scaling": 100,
   "theme.bar.margin_sides": "0.5em",
   "theme.bar.floating": true,
   "theme.bar.buttons.workspaces.enableBorder": true,
   "theme.bar.border.width": "0.15em",
-  "theme.bar.enableShadow": true,
-  "theme.bar.outer_spacing": "0.4em",
-  "wallpaper.enable": false,
+  "theme.bar.enableShadow": false,
+  "theme.bar.outer_spacing": "0",
+  "theme.bar.menus.monochrome": false,
+  "theme.bar.menus.background": "#3d3846",
+  "theme.bar.border.location": "none",
+  "theme.bar.transparent": true,
+  "theme.bar.buttons.y_margins": "0",
+  "theme.bar.border_radius": "0",
   "menus.power.lowBatteryNotification": true,
+  "menus.dashboard.directories.enabled": false,
+  "wallpaper.pywal": false,
+  "wallpaper.enable": false,
   "bar.layouts": {
     "0": {
       "left": [
         "dashboard",
         "workspaces",
         "windowtitle",
-        "systray"
+        "media"
       ],
       "middle": [
-        "media",
-        "clock",
-        "battery"
+        "updates",
+        "systray",
+        "notifications"
       ],
       "right": [
         "volume",
         "network",
         "bluetooth",
-        "cpu",
-        "ram",
         "hyprsunset",
-        "updates",
-        "notifications"
+        "clock",
+        "battery"
       ]
     },
     "1": {

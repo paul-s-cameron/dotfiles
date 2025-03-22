@@ -7,7 +7,9 @@ bluez-utils
 brave-bin
 btop
 cliphist
+cmake
 code
+cpio
 discord
 dolphin
 downgrade
@@ -22,6 +24,7 @@ jackett
 man-db
 man-pages
 mediainfo
+meson
 mpv
 mpvpaper
 mtools
@@ -34,6 +37,7 @@ ouch
 pipewire
 pipewire-jack
 pipewire-pulse
+pkg-config
 power-profiles-daemon
 qbittorrent
 qt5-quickcontrols2
