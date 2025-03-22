@@ -55,3 +55,4 @@
     - [systemctl --user enable --now hyprpolkitagent, Enabling hyrpolkitagent service]
     - [systemctl --user enable --now hypridle, Enabling hypridle service]
     - [systemctl --user enable --now hyprpanel, Enabling hyprpanel service]
+    - [systemctl --user enable --now zramswap, Enabling zramswap service]
