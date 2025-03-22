@@ -4,7 +4,7 @@
       create: true
       relink: true
     shell:
-      stderr: true
+      stdout: true
 
 - clean:
     ~/:
@@ -49,6 +49,8 @@
 
 - shell:
     - [chmod +x -R ~/.scripts, Authorizing scripts]
+    - [sudo chmod a+wr /opt/spotify, Setting spicetify permissions]
+    - [sudo chmod a+wr /opt/spotify/Apps -R]
     - [git submodule update --init --recursive, Installing submodules]
     - [systemctl --user enable --now hyprpolkitagent, Enabling hyrpolkitagent service]
     - [systemctl --user enable --now hypridle, Enabling hypridle service]
