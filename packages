@@ -22,6 +22,7 @@ grim
 htop
 hyprland-meta-git
 jackett
+kitty
 man-db
 man-pages
 mediainfo
@@ -69,4 +70,5 @@ xdg-desktop-portal-wlr
 xorg-xhost
 yazi-nightly-bin
 zoxide
+zramswap
 zsh
