@@ -54,6 +54,7 @@ timeshift-autosnap
 ttf-dejavu
 vim
 waybar
+wayland-logout
 wf-recorder
 wl-clip-persist
 xdg-desktop-portal-gtk
