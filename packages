@@ -6,6 +6,7 @@ bluez
 bluez-utils
 brave-bin
 btop
+cava
 cliphist
 cmake
 code
@@ -51,6 +52,8 @@ sddm-git
 slurp
 sof-firmware
 speedtest-cli
+spicetify-cli
+spotify
 sublime-text-4
 thefuck
 timeshift

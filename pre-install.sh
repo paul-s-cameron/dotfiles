@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! command -v yay &> /dev/null; then
+if ! command -v yay 2>&1 >/dev/null; then
   echo "Installing yay"
 
   # Dependencies
