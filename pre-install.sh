@@ -20,7 +20,7 @@ else
 fi
 
 echo "Installing packages"
-yay -S --needed --noconfirm - < ~/.dotfiles/packages |& grep -v "skipping"
+yay -Sy --needed --noconfirm - < ~/.dotfiles/packages |& grep -v "skipping"
 
 # Check if oh-my-zsh is installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
