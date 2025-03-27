@@ -25,6 +25,7 @@ yay -Sy --needed --noconfirm - < ~/.dotfiles/packages |& grep -v "skipping"
 # Check if oh-my-zsh is installed
 if [ ! -d "$HOME/.oh-my-zsh/tools" ]; then
   echo 'Installing oh-my-zsh'
+  rm -rf $HOME/.oh-my-zsh
   /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 else
   echo 'Updating oh-my-zsh'
