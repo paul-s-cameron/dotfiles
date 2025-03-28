@@ -24,7 +24,7 @@
 - link:
     ~/.local/share/rofi/themes/:
         glob: true
-        path: themes/rofi/themes/*
+        path: themes/rofi/*
     ~/.config/spicetify/Themes/:
         glob: true
         path: themes/spicetify/*
