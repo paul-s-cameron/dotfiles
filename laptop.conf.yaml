@@ -1,0 +1,135 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+    shell:
+      stdout: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+
+- yay:
+    - 7zip
+    - ags-hyprpanel-git
+    - alsa-utils
+    - bitwarden
+    - bluez
+    - bluez-utils
+    - brave-bin
+    - btop
+    - cava
+    - cliphist
+    - cmake
+    - code
+    - cpio
+    - discord
+    - dolphin
+    - downgrade
+    - fastfetch
+    - fd
+    - ghostty
+    - gifski
+    - github-cli
+    - grim
+    - htop
+    - hyprland-meta-git
+    - jackett
+    - kitty
+    - krita
+    - man-db
+    - man-pages
+    - mediainfo
+    - meson
+    - mpv
+    - mpvpaper
+    - mtools
+    - mullvad-vpn-bin
+    - nano
+    - neovim
+    - noto-fonts
+    - ouch
+    - pipewire
+    - pipewire-pulse
+    - pkg-config
+    - power-profiles-daemon
+    - qbittorrent
+    - qt5-quickcontrols2
+    - qt6-declarative
+    - qt6-svg
+    - ripgrep
+    - rofi-cuff-git
+    - rofi-wayland
+    - rustdesk-bin
+    - sddm-git
+    - slurp
+    - sof-firmware
+    - speedtest-cli
+    - spicetify-cli
+    - spotify
+    - sublime-text-4
+    - thefuck
+    - timeshift
+    - timeshift-autosnap
+    - ttf-dejavu
+    - vim
+    - wayland-logout
+    - wf-recorder
+    - wl-clip-persist
+    - xdg-desktop-portal-gtk
+    - xdg-desktop-portal-wlr
+    - xorg-xhost
+    - yazi-nightly-bin
+    - zoxide
+    - zramswap
+    - zsh
+
+- create:
+    - ~/Desktop
+    - ~/Documents
+    - ~/Downloads
+    - ~/Music
+    - ~/Pictures
+    - ~/Public
+    - ~/Videos
+    - ~/Wallpapers
+
+- link:
+    ~/.local/share/rofi/themes/:
+        glob: true
+        path: themes/rofi/*
+    ~/.config/spicetify/Themes/:
+        glob: true
+        path: themes/spicetify/*
+    ~/.config/:
+        glob: true
+        path: config/*
+    ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
+    ~/.config/Vencord/settings/settings.json: Vencord/settings/settings.json
+    ~/.config/Vencord/vencord-settings.json: Vencord/vencord-settings.json
+    ~/.config/Vencord/themes: Vencord/themes
+    ~/.config/hyprpanel/config.json: hyprpanel/laptop.json
+    ~/.zshrc_local_after: zshrc_local_after
+    ~/.gitconfig: gitconfig
+    ~/.scripts: scripts
+
+    ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions/
+    ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
+
+- shell:
+    - [sh zsh-install.sh, Running zsh installation script]
+    - [chmod +x -R ~/.scripts, Authorizing scripts]
+    - [sudo chmod a+wr /opt/spotify, Setting spicetify permissions]
+    - [sudo chmod a+wr /opt/spotify/Apps -R]
+    - [git submodule update --init --recursive, Installing submodules]
+    - [systemctl --user enable --now hyprpolkitagent, Enabling hyrpolkitagent service]
+    - [systemctl --user enable --now hypridle, Enabling hypridle service]
+    - [systemctl --user enable --now hyprpanel, Enabling hyprpanel service]

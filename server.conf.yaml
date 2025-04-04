@@ -1,0 +1,57 @@
+- defaults:
+    link:
+      force: true
+      create: true
+      relink: true
+    shell:
+      stdout: true
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      recursive: true
+
+- yay:
+    - 7zip
+    - btop
+    - cmake
+    - cpio
+    - downgrade
+    - fastfetch
+    - fd
+    - github-cli
+    - htop
+    - man-db
+    - man-pages
+    - mediainfo
+    - meson
+    - mtools
+    - nano
+    - neovim
+    - noto-fonts
+    - ouch
+    - pkg-config
+    - ripgrep
+    - speedtest-cli
+    - thefuck
+    - timeshift
+    - timeshift-autosnap
+    - yazi-nightly-bin
+    - zoxide
+    - zramswap
+    - zsh
+
+- link:
+    ~/.config/yazi: config/yazi
+    ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions/
+    ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
+
+- shell:
+    - [sh zsh-install.sh, Running zsh installation script]
+    - [git submodule update --init --recursive, Installing submodules]
