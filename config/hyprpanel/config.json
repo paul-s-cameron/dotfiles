@@ -1,6 +1,6 @@
 {
   "scalingPriority": "both",
-  "bar.autoHide": "fullscreen",
+  "bar.autoHide": "never",
   "bar.customModules.scrollSpeed": 5,
   "bar.workspaces.showWsIcons": true,
   "bar.workspaces.showApplicationIcons": true,
