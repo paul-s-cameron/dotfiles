@@ -12,9 +12,6 @@
     ~/.config:
       recursive: true
 
-- shell:
-    - [sh zsh-install.sh, Running zsh installation script]
-
 - yay:
     - 7zip
     - ags-hyprpanel-git
@@ -91,10 +88,14 @@
     - zsh
 
 - create:
+    - ~/Desktop
+    - ~/Documents
     - ~/Downloads
-    - ~/Wallpapers
+    - ~/Music
     - ~/Pictures
+    - ~/Public
     - ~/Videos
+    - ~/Wallpapers
 
 - link:
     ~/.local/share/rofi/themes/:
@@ -111,18 +112,20 @@
     ~/.config/Vencord/vencord-settings.json: Vencord/vencord-settings.json
     ~/.config/Vencord/themes: Vencord/themes
     ~/.config/hyprpanel/config.json: hyprpanel/desktop.json
+    ~/.zshrc_local_after: zshrc_local_after
+    ~/.gitconfig: gitconfig
+    ~/.scripts: scripts
+
     ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
     ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions/
     ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
     ~/.zshrc: zshrc
-    ~/.zshrc_local_after: zshrc_local_after
-    ~/.scripts: scripts
     ~/.p10k.zsh: p10k.zsh
-    ~/.gitconfig: gitconfig
 
 - shell:
+    - [sh zsh-install.sh, Running zsh installation script]
     - [chmod +x -R ~/.scripts, Authorizing scripts]
     - [sudo chmod a+wr /opt/spotify, Setting spicetify permissions]
     - [sudo chmod a+wr /opt/spotify/Apps -R]
