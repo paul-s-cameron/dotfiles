@@ -1,0 +1,1 @@
+/home/tuples/.dotfiles/.plugins/yay/yay.py

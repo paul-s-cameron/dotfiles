@@ -16,3 +16,9 @@
 [submodule "themes/spicetify"]
 	path = themes/spicetify
 	url = https://github.com/spicetify/spicetify-themes
+[submodule ".plugins/dotbot-yay"]
+	path = .plugins/dotbot-yay
+	url = https://github.com/oxson/dotbot-yay
+[submodule ".plugins/yay"]
+	path = .plugins/yay
+	url = https://github.com/oxson/dotbot-yay

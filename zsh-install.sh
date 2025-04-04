@@ -1,27 +1,5 @@
 #!/bin/bash
 
-if ! command -v yay 2>&1 >/dev/null; then
-  echo "Installing yay"
-
-  # Dependencies
-  sudo pacman -S --needed git base-devel
-
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
-  makepkg -si
-
-  # Cleanup
-  cd ..
-  rm -r yay
-
-  echo "Yay installation complete"
-else
-  echo "Yay is installed"
-fi
-
-echo "Installing packages"
-yay -Sy --needed --noconfirm - < ~/.dotfiles/packages |& grep -v "skipping"
-
 # Check if oh-my-zsh is installed
 if [ ! -d "$HOME/.oh-my-zsh/tools" ]; then
   echo 'Installing oh-my-zsh'
