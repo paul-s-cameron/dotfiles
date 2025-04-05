@@ -60,7 +60,10 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": true
+            "enabled": true,
+            "anonymiseByDefault": true,
+            "method": 0,
+            "randomisedLength": 7
         },
         "AppleMusicRichPresence": {
             "enabled": false
@@ -429,7 +432,7 @@
             "enabled": false
         },
         "ReadAllNotificationsButton": {
-            "enabled": true
+            "enabled": false
         },
         "RelationshipNotifier": {
             "enabled": true,
@@ -480,7 +483,9 @@
             "enabled": false
         },
         "ShowConnections": {
-            "enabled": true
+            "enabled": true,
+            "iconSpacing": 1,
+            "iconSize": 32
         },
         "ShowHiddenChannels": {
             "enabled": true,
@@ -634,6 +639,9 @@
         },
         "SupportHelper": {
             "enabled": true
+        },
+        "VcNotify": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -646,6 +654,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1741646841445
+        "settingsSyncVersion": 1743826074291
     }
 }
