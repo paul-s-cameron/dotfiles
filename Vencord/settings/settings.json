@@ -641,7 +641,18 @@
             "enabled": true
         },
         "VcNotify": {
-            "enabled": true
+            "enabled": false,
+            "selfNotify": true,
+            "joinMessage": "{{USER}} joined",
+            "messageDuration": 1.5,
+            "leaveMessage": "{{USER}} left",
+            "moveMessage": "{{USER}} moved to {{CHANNEL}}",
+            "muteMessage": "{{USER}} muted",
+            "unmuteMessage": "{{USER}} unmuted",
+            "deafenMessage": "{{USER}} deafened",
+            "undeafenMessage": "{{USER}} undeafened",
+            "streamMessage": "{{USER}} started streaming",
+            "videoMessage": "{{USER}} turned on their webcam"
         }
     },
     "notifications": {
@@ -654,6 +665,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1743826074291
+        "settingsSyncVersion": 1743832574670
     }
 }
