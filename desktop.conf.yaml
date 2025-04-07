@@ -24,7 +24,6 @@
     - cava
     - cliphist
     - cmake
-    - code
     - cpio
     - discord
     - dolphin
@@ -37,6 +36,7 @@
     - grim
     - htop
     - hyprland-meta-git
+    - hyprshade
     - jackett
     - kitty
     - krita
@@ -76,6 +76,7 @@
     - timeshift-autosnap
     - ttf-dejavu
     - vim
+    - visual-studio-code-bin
     - wf-recorder
     - wl-clip-persist
     - xdg-desktop-portal-gtk
