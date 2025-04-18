@@ -28,6 +28,7 @@
     - discord
     - dolphin
     - downgrade
+    - dua-cli
     - fastfetch
     - fd
     - ghostty
@@ -131,5 +132,4 @@
     - [sudo chmod a+wr /opt/spotify/Apps -R]
     - [git submodule update --init --recursive, Installing submodules]
     - [systemctl --user enable --now hyprpolkitagent, Enabling hyrpolkitagent service]
-    - [systemctl --user enable --now hypridle, Enabling hypridle service]
     - [systemctl --user enable --now hyprpanel, Enabling hyprpanel service]

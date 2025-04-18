@@ -242,7 +242,14 @@
             "enabled": false
         },
         "ImageZoom": {
-            "enabled": true
+            "enabled": true,
+            "size": 388,
+            "zoom": 4.4,
+            "saveZoomValues": true,
+            "nearestNeighbour": false,
+            "square": false,
+            "invertScroll": true,
+            "zoomSpeed": 0.5
         },
         "ImplicitRelationships": {
             "enabled": false
@@ -291,12 +298,13 @@
             "collapseDeleted": false,
             "deleteStyle": "text",
             "ignoreBots": false,
-            "ignoreSelf": false,
+            "ignoreSelf": true,
             "ignoreUsers": "",
             "ignoreChannels": "",
             "ignoreGuilds": "",
             "logEdits": true,
-            "logDeletes": true
+            "logDeletes": true,
+            "inlineEdits": true
         },
         "MessageTags": {
             "enabled": false
@@ -381,7 +389,12 @@
             "enabled": false
         },
         "OpenInApp": {
-            "enabled": true
+            "enabled": true,
+            "spotify": true,
+            "steam": true,
+            "epic": true,
+            "tidal": true,
+            "itunes": true
         },
         "OverrideForumDefaults": {
             "enabled": false
@@ -665,6 +678,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1743832574670
+        "settingsSyncVersion": 1744940038687
     }
 }

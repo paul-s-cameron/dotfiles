@@ -39,6 +39,7 @@ edit = [
 ]
 open = [
 	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },
+	{ run = 'feh "$1"',                desc = "Image Viewer", for = "linux" },
 	{ run = 'open "$@"',                    desc = "Open", for = "macos" },
 	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
 	{ run = 'termux-open "$1"',             desc = "Open", for = "android" },
