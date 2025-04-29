@@ -72,14 +72,15 @@
             "enabled": false
         },
         "BetterFolders": {
-            "enabled": true,
+            "enabled": false,
             "sidebar": true,
             "showFolderIcon": 1,
             "keepIcons": false,
             "closeAllHomeButton": false,
             "closeAllFolders": false,
             "forceOpen": false,
-            "sidebarAnim": true
+            "sidebarAnim": true,
+            "closeOthers": false
         },
         "BetterGifAltText": {
             "enabled": true
@@ -112,7 +113,7 @@
             "enabled": true
         },
         "BiggerStreamPreview": {
-            "enabled": false
+            "enabled": true
         },
         "BlurNSFW": {
             "enabled": false
@@ -572,7 +573,7 @@
             "enabled": false
         },
         "UnlockedAvatarZoom": {
-            "enabled": false
+            "enabled": true
         },
         "UnsuppressEmbeds": {
             "enabled": false
@@ -602,7 +603,9 @@
             "enabled": false
         },
         "ViewIcons": {
-            "enabled": false
+            "enabled": true,
+            "format": "webp",
+            "imgSize": "1024"
         },
         "ViewRaw": {
             "enabled": false
@@ -678,6 +681,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1744940038687
+        "settingsSyncVersion": 1745797350344
     }
 }

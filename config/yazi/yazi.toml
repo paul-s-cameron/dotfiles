@@ -34,12 +34,12 @@ edit = [
 	{ run = '${EDITOR:-vim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
 	{ run = '${VISUAL} "$@"', desc = "$VISUAL", block = false, for = "unix" },
 	{ run = '${CODE} "$@"', desc = "$CODE", block = false, for = "unix" },
+	{ run = 'mpv "$@"', desc = "MPV", orphan = true, for = "unix" },
 	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
 	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
 ]
 open = [
 	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },
-	{ run = 'feh "$1"',                desc = "Image Viewer", for = "linux" },
 	{ run = 'open "$@"',                    desc = "Open", for = "macos" },
 	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
 	{ run = 'termux-open "$1"',             desc = "Open", for = "android" },
@@ -60,6 +60,9 @@ play = [
 	{ run = 'mpv --force-window %*', orphan = true, for = "windows" },
 	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
+feh = [
+	{ run = 'feh "$1"',                desc = "Image Viewer", for = "linux" },
+]
 
 [open]
 rules = [
@@ -68,7 +71,7 @@ rules = [
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
-	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "image/*", use = [ "feh" ] },
 	# Media
 	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
 	# Archive

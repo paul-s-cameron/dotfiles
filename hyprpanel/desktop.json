@@ -51,5 +51,9 @@
         "clock"
       ]
     }
-  }
+  },
+  "theme.bar.buttons.style": "default",
+  "theme.bar.buttons.icon_background": "#242438",
+  "theme.bar.background": "#11111b",
+  "theme.bar.opacity": 100
 }
