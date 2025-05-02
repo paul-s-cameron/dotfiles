@@ -116,7 +116,7 @@
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.config/Vencord/settings/settings.json: Vencord/settings/settings.json
     ~/.config/Vencord/themes: Vencord/themes
-    ~/.config/hyprpanel/config.json: hyprpanel/desktop.json
+    ~/.config/hyprpanel/config.json: themes/hyprpanel/desktop.json
 
     ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
     ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
@@ -128,6 +128,7 @@
 
     ~/.zshrc: home/zshrc
     ~/.p10k.zsh: home/p10k.zsh
+    ~/.gitconfig: home/gitconfig
     ~/.zshrc_local_after: home/zshrc_local_after
 
 - shell:
