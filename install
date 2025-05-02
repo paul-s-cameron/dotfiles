@@ -2,7 +2,16 @@
 
 set -e
 
-CONFIG="laptop.conf.yaml"
+if [ -z "$1" ]; then
+  echo "Usage: $0 <env>"
+  echo "Example: $0 dev"
+  exit 1
+fi
+
+ENV_NAME="$1"
+shift
+
+CONFIG="${ENV_NAME}.conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"

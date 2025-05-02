@@ -50,7 +50,6 @@
     - mtools
     - mullvad-vpn-bin
     - nano
-    - neovim
     - noto-fonts
     - ouch
     - pipewire
@@ -102,28 +101,33 @@
     ~/.local/share/rofi/themes/:
         glob: true
         path: themes/rofi/*
+
     ~/.config/spicetify/Themes/:
         glob: true
         path: themes/spicetify/*
-    ~/.config/:
-        glob: true
-        path: config/*
+    ~/.config/cava: config/cava
+    ~/.config/ghostty: config/ghostty
+    ~/.config/hypr: config/hypr
+    ~/.config/qt6ct: config/qt6ct
+    ~/.config/rofi: config/rofi
+    ~/.config/waybar: config/waybar
+    ~/.config/yazi: config/yazi
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.config/Vencord/settings/settings.json: Vencord/settings/settings.json
-    ~/.config/Vencord/vencord-settings.json: Vencord/vencord-settings.json
     ~/.config/Vencord/themes: Vencord/themes
     ~/.config/hyprpanel/config.json: hyprpanel/laptop.json
-    ~/.zshrc_local_after: zshrc_local_after
-    ~/.gitconfig: gitconfig
-    ~/.scripts: scripts
 
     ~/.oh-my-zsh/custom/alias.zsh: oh-my-zsh/custom/alias.zsh
     ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions/
     ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-    ~/.zshrc: zshrc
-    ~/.p10k.zsh: p10k.zsh
+    
+    ~/.scripts: scripts
+    
+    ~/.zshrc: home/zshrc
+    ~/.p10k.zsh: home/p10k.zsh
+    ~/.zshrc_local_after: home/zshrc_local_after
 
 - shell:
     - [sh zsh-install.sh, Running zsh installation script]
