@@ -16,4 +16,4 @@
     - lua
 
 - link:
-    - ~/.config/nvim: config/nvim
+    ~/.config/nvim: config/nvim
