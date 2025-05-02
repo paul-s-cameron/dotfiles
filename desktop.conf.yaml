@@ -112,6 +112,7 @@
     ~/.config/rofi: config/rofi
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
+    ~/.config/electron-flags.conf: config/electron-flags.conf
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.config/Vencord/settings/settings.json: Vencord/settings/settings.json
     ~/.config/Vencord/themes: Vencord/themes
@@ -124,7 +125,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
 
     ~/.scripts: scripts
-    
+
     ~/.zshrc: home/zshrc
     ~/.p10k.zsh: home/p10k.zsh
     ~/.zshrc_local_after: home/zshrc_local_after

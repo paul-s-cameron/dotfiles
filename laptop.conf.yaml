@@ -112,6 +112,7 @@
     ~/.config/rofi: config/rofi
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
+    ~/.config/electron-flags.conf: config/electron-flags.conf
     ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.config/Vencord/settings/settings.json: Vencord/settings/settings.json
     ~/.config/Vencord/themes: Vencord/themes
