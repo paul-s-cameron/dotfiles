@@ -36,3 +36,8 @@ run = "plugin mount"
 on = ["C"]
 run = "plugin ouch --args=zip"
 desc = "Compress with ouch"
+
+[[manager.prepend_keymap]]
+on = [".", "s"]
+run = "plugin what-size -- '--clipboard'"
+desc = "Calc size of selection or cwd"

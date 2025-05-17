@@ -68,6 +68,11 @@ use = "yazi-rs/plugins:mount"
 rev = "b12a9ab"
 hash = "dd97eede8e20e59cd2604e8006e470e2"
 
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "f1c6b69"
+hash = "6e789212eb41d937bab04877ca361099"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
 rev = "68326b4"
