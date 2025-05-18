@@ -77,6 +77,7 @@
     - ttf-dejavu
     - vim
     - visual-studio-code-bin
+    - vulkan-radeon
     - wf-recorder
     - wl-clip-persist
     - xdg-desktop-portal-gtk
