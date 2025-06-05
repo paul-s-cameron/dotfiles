@@ -72,6 +72,21 @@ set_rotation() {
   send_command "set video-rotate $rotation"
 }
 
+spawn_interval() {
+  local interval=$1
+  local command=$2
+
+  # Spawn a background process that runs the command at the specified interval
+  (
+    while true; do
+      wallpaper.sh send $command
+      sleep "$interval"
+    done
+  ) > /dev/null 2>&1 &
+  echo "Spawned interval command: '$command' every $interval seconds"
+  echo $! > /tmp/wallpaper_interval.pid
+}
+
 # Parse the command
 case "$1" in
   set)
@@ -121,6 +136,31 @@ case "$1" in
     ;;
   rotate)
     set_rotation "$2"
+    ;;
+  interval)
+    case "$2" in
+      stop)
+        # Stop the interval command
+
+        if [ -f /tmp/wallpaper_interval.pid ]; then
+          kill $(cat /tmp/wallpaper_interval.pid) 2>/dev/null
+          rm -f /tmp/wallpaper_interval.pid
+          echo "Stopped interval command."
+        else
+          echo "No interval command is running."
+        fi
+        exit 0
+        ;;
+      *)
+        # Expects an interval in seconds and a command to run
+        if [ -z "$2" ] || [ -z "$3" ]; then
+          echo "Usage: $0 interval <seconds> <command>"
+          exit 1
+        fi
+
+        spawn_interval "$2" "$3"
+        ;;
+    esac
     ;;
   *)
     echo "Usage: $0 {set|add|reload|playlist|send} [path:file/playlist] [save]"
