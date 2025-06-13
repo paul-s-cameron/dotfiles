@@ -85,7 +85,7 @@
     - xorg-xhost
     - yazi-nightly-bin
     - zoxide
-    - zramswap
+    - zram-generator
     - zsh
 
 - create:
