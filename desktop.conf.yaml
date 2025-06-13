@@ -41,6 +41,7 @@
     - jackett
     - kitty
     - krita
+    - lazygit
     - man-db
     - man-pages
     - mediainfo
@@ -67,6 +68,7 @@
     - sddm-git
     - slurp
     - sof-firmware
+    - socat
     - speedtest-cli
     - spicetify-cli
     - spotify
