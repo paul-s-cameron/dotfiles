@@ -20,6 +20,7 @@
     - bluez
     - bluez-utils
     - brave-bin
+    - brightnessctl
     - btop
     - cava
     - cliphist
@@ -37,7 +38,6 @@
     - grim
     - htop
     - hyprland-meta-git
-    - hyprshade
     - jackett
     - kitty
     - krita
@@ -49,8 +49,6 @@
     - mpv
     - mpvpaper
     - mtools
-    - mullvad-vpn-bin
-    - nano
     - noto-fonts
     - ouch
     - pipewire
@@ -77,6 +75,7 @@
     - timeshift
     - timeshift-autosnap
     - ttf-dejavu
+    - veracrypt
     - vim
     - visual-studio-code-bin
     - vulkan-radeon
