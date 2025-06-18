@@ -34,6 +34,7 @@
     - ghostty
     - gifski
     - github-cli
+    - gpu-screen-recorder
     - grim
     - htop
     - hyprland
@@ -81,6 +82,7 @@
     - vim
     - visual-studio-code-bin
     - vulkan-radeon
+    - waybar
     - wf-recorder
     - wl-clip-persist
     - xdg-desktop-portal-gtk
@@ -117,6 +119,7 @@
     ~/.config/rofi: config/rofi
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
+    ~/.config/btop: config/btop
     ~/.config/nvim/lua: config/nvim/lua
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/electron-flags.conf: config/electron-flags.conf

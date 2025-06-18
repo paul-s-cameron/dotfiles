@@ -46,3 +46,8 @@ desc = "Compress with ouch"
 on = ["'", "s"]
 run = "plugin what-size -- '--clipboard'"
 desc = "Calc size of selection or cwd"
+
+[[mgr.prepend_keymap]]
+on = ["'", "r"]
+run = 'search_do --via=fd . --args="--newer 1h"'
+desc = "Find recently changed files"
