@@ -14,7 +14,6 @@
 
 - yay:
     - 7zip
-    - ags-hyprpanel-git
     - alsa-utils
     - bitwarden
     - bluez
@@ -37,7 +36,10 @@
     - github-cli
     - grim
     - htop
-    - hyprland-meta-git
+    - hyprland
+    - hyprlock
+    - hypridle
+    - hyprpolkitagent
     - jackett
     - kitty
     - krita
@@ -63,7 +65,7 @@
     - rofi-cuff-git
     - rofi-wayland
     - rustdesk-bin
-    - sddm-git
+    - sddm
     - slurp
     - sof-firmware
     - socat
@@ -83,6 +85,7 @@
     - wl-clip-persist
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-wlr
+    - xdg-desktop-portal-hyprland
     - xorg-xhost
     - yazi-nightly-bin
     - zoxide
@@ -103,10 +106,10 @@
     ~/.local/share/rofi/themes/:
         glob: true
         path: themes/rofi/*
-
     ~/.config/spicetify/Themes/:
         glob: true
         path: themes/spicetify/*
+
     ~/.config/cava: config/cava
     ~/.config/ghostty: config/ghostty
     ~/.config/hypr: config/hypr
