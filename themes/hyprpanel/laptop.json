@@ -24,8 +24,12 @@
   "menus.dashboard.directories.enabled": false,
   "menus.dashboard.shortcuts.left.shortcut1.command": "brave",
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Brave",
-  "wallpaper.pywal": false,
-  "wallpaper.enable": false,
+  "wallpaper.pywal": true,
+  "wallpaper.enable": true,
+  "wallpaper.image": "/home/tuples/Pictures/wallpapers/gif/Tranquil Japan Lake View.gif",
+  "theme.matugen": true,
+  "theme.matugen_settings.mode": "dark",
+  "theme.matugen_settings.scheme_type": "fruit-salad",
   "bar.layouts": {
     "*": {
       "left": [

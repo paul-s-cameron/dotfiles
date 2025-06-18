@@ -97,7 +97,6 @@
     - ~/Pictures
     - ~/Public
     - ~/Videos
-    - ~/Wallpapers
 
 - link:
     ~/.local/share/rofi/themes/:
