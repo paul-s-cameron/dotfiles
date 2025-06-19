@@ -141,6 +141,7 @@
     ~/.zshrc: home/zshrc
     ~/.p10k.zsh: home/p10k.zsh
     ~/.gitconfig: home/gitconfig
+    ~/.zshrc_local_before: home/zshrc_local_before
     ~/.zshrc_local_after: home/zshrc_local_after
 
 - shell:

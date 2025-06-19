@@ -55,5 +55,7 @@
   },
   "bar.customModules.storage.paths": [
     "/"
-  ]
+  ],
+  "theme.matugen_settings.variation": "standard_1",
+  "theme.bar.menus.opacity": 100
 }
