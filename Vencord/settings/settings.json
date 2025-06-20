@@ -171,9 +171,6 @@
         "DontRoundMyTimestamps": {
             "enabled": false
         },
-        "EmoteCloner": {
-            "enabled": true
-        },
         "Experiments": {
             "enabled": false
         },
@@ -244,8 +241,8 @@
         },
         "ImageZoom": {
             "enabled": true,
-            "size": 388,
-            "zoom": 4.4,
+            "size": 676,
+            "zoom": 2.4800000000000004,
             "saveZoomValues": true,
             "nearestNeighbour": false,
             "square": false,
@@ -454,7 +451,8 @@
             "groups": true,
             "servers": true,
             "friends": true,
-            "friendRequestCancels": true
+            "friendRequestCancels": true,
+            "notices": false
         },
         "ReplaceGoogleSearch": {
             "enabled": false
@@ -669,6 +667,9 @@
             "undeafenMessage": "{{USER}} undeafened",
             "streamMessage": "{{USER}} started streaming",
             "videoMessage": "{{USER}} turned on their webcam"
+        },
+        "ExpressionCloner": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -681,6 +682,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1745797350344
+        "settingsSyncVersion": 1749344671637
     }
 }
