@@ -58,8 +58,8 @@ extract = [
 play = [
 	{ run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
 	{ run = 'losslesscut "$@"', orphan = true, for = "unix", desc = "Cut video" },
-	{ run = 'ffmpeg -i "$@" "$(basename "$@" .${@##*.})_converted.gif', for = "uix", desc = "Convert to gif" },
-	{ run = 'mkgif.sh "$@"', for = "uix", desc = "Convert to optimized gif" },
+	{ run = 'ffmpeg -i "$@" "$(basename "$@" .${@##*.})_converted.gif', for = "unix", desc = "Convert to gif" },
+	{ run = 'mkgif.sh "$@"', for = "unix", desc = "Convert to optimized gif" },
 	{ run = 'mpv --force-window %*', orphan = true, for = "windows" },
 	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
@@ -73,6 +73,8 @@ rules = [
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
+	# Gif
+	{ mime = "image/gif", use = [ "play" ] },
 	# Image
 	{ mime = "image/*", use = [ "feh" ] },
 	# Media
