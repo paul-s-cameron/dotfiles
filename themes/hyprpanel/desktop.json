@@ -25,8 +25,8 @@
   "menus.dashboard.directories.enabled": false,
   "menus.dashboard.shortcuts.left.shortcut1.command": "brave",
   "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Brave",
-  "wallpaper.pywal": false,
-  "wallpaper.enable": false,
+  "wallpaper.pywal": true,
+  "wallpaper.enable": true,
   "bar.layouts": {
     "*": {
       "left": [
@@ -55,5 +55,11 @@
   "theme.bar.buttons.style": "default",
   "theme.bar.buttons.icon_background": "#242438",
   "theme.bar.background": "#11111b",
-  "theme.bar.opacity": 100
+  "theme.bar.opacity": 100,
+  "theme.matugen": true,
+  "wallpaper.image": "/home/tuples/Pictures/wallpapers/glowing-blue-eye-3350.gif",
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "theme.matugen_settings.scheme_type": "fruit-salad"
 }
