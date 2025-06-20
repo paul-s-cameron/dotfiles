@@ -15,6 +15,7 @@
 - yay:
     - 7zip
     - alsa-utils
+    - ags-hyprpanel-git
     - bitwarden
     - bluez
     - bluez-utils
@@ -75,7 +76,7 @@
     - spotify
     - sublime-text-4
     - swww
-    - swww-engine
+    - swengine
     - swappy
     - thefuck
     - timeshift
@@ -85,14 +86,13 @@
     - vim
     - visual-studio-code-bin
     - vulkan-radeon
-    - waybar
     - wf-recorder
     - wl-clip-persist
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-wlr
     - xdg-desktop-portal-hyprland
     - xorg-xhost
-    - yazi-nightly-bin
+    - yazi
     - zoxide
     - zram-generator
     - zsh

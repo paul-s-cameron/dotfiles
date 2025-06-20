@@ -14,12 +14,13 @@
 
 - yay:
     - 7zip
-    - ags-hyprpanel-git
     - alsa-utils
+    - ags-hyprpanel-git
     - bitwarden
     - bluez
     - bluez-utils
     - brave-bin
+    - brightnessctl
     - btop
     - cava
     - cliphist
@@ -34,10 +35,13 @@
     - ghostty
     - gifski
     - github-cli
+    - gpu-screen-recorder
     - grim
     - htop
-    - hyprland-meta-git
-    - hyprshade
+    - hyprland
+    - hyprlock
+    - hypridle
+    - hyprpolkitagent
     - jackett
     - kitty
     - krita
@@ -65,7 +69,7 @@
     - rofi-cuff-git
     - rofi-wayland
     - rustdesk-bin
-    - sddm-git
+    - sddm
     - slurp
     - sof-firmware
     - socat
@@ -73,16 +77,21 @@
     - spicetify-cli
     - spotify
     - sublime-text-4
+    - swww
+    - swengine
+    - swappy
     - thefuck
     - timeshift
     - timeshift-autosnap
     - ttf-dejavu
+    - veracrypt
     - vim
     - visual-studio-code-bin
     - wf-recorder
     - wl-clip-persist
     - xdg-desktop-portal-gtk
     - xdg-desktop-portal-wlr
+    - xdg-desktop-portal-hyprland
     - xorg-xhost
     - yazi-nightly-bin
     - zoxide
