@@ -57,9 +57,9 @@
   "theme.bar.background": "#11111b",
   "theme.bar.opacity": 100,
   "theme.matugen": true,
-  "wallpaper.image": "/home/tuples/Pictures/wallpapers/glowing-blue-eye-3350.gif",
+  "wallpaper.image": "/home/tuples/Pictures/wallpapers/gif/Space Marine: Orbital Annihilation.gif",
   "bar.customModules.storage.paths": [
     "/"
   ],
-  "theme.matugen_settings.scheme_type": "fruit-salad"
+  "theme.matugen_settings.scheme_type": "content"
 }

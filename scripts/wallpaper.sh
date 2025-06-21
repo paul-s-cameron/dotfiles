@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define a file to store the current playlist path
-playlist_env_file="$HOME/.wallpaper_playlist"
+playlist_env_file="$HOME/.wallpaper"
 
 send_command() {
   local my_command=$1
