@@ -114,9 +114,6 @@
     ~/.config/spicetify/Themes/:
         glob: true
         path: themes/spicetify/*
-    ~/.local/share/fastfetch/:
-        glob: true
-        path: themes/fastfetch/*
 
     ~/.config/cava: config/cava
     ~/.config/ghostty: config/ghostty
@@ -125,6 +122,8 @@
     ~/.config/rofi: config/rofi
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
+    ~/.config/fastfetch: config/fastfetch
+    ~/.config/mpv: config/mpv
     ~/.config/nvim/lua: config/nvim/lua
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/electron-flags.conf: config/electron-flags.conf
@@ -144,6 +143,7 @@
     ~/.zshrc: home/zshrc
     ~/.p10k.zsh: home/p10k.zsh
     ~/.gitconfig: home/gitconfig
+    ~/.zshrc_local_before: home/zshrc_local_before
     ~/.zshrc_local_after: home/zshrc_local_after
 
 - shell:

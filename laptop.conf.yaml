@@ -110,12 +110,12 @@
     ~/.local/share/rofi/themes/:
         glob: true
         path: themes/rofi/*
+    ~/.local/share/fastfetch/presets/:
+        glob: true
+        path: themes/fastfetch/*
     ~/.config/spicetify/Themes/:
         glob: true
         path: themes/spicetify/*
-    ~/.local/share/fastfetch/:
-        glob: true
-        path: themes/fastfetch/*
 
     ~/.config/cava: config/cava
     ~/.config/ghostty: config/ghostty
@@ -125,6 +125,7 @@
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
     ~/.config/btop: config/btop
+    ~/.config/mpv: config/mpv
     ~/.config/nvim/lua: config/nvim/lua
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/electron-flags.conf: config/electron-flags.conf
