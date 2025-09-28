@@ -46,7 +46,7 @@ keybind = ctrl+w=close_tab
 keybind = ctrl+left=next_tab
 keybind = ctrl+right=last_tab
 
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 window-decoration = false
 mouse-hide-while-typing = true
 background-opacity = 0.5
