@@ -64,7 +64,7 @@ play = [
 	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
 feh = [
-	{ run = 'feh "$1"',                desc = "Image Viewer", for = "linux" },
+	{ run = 'feh -F "$1"',                desc = "Image Viewer", for = "linux" },
 ]
 
 [open]

@@ -116,6 +116,9 @@
     ~/.config/spicetify/Themes/:
         glob: true
         path: themes/spicetify/*
+    ~/.local/share/ghostty/themes/:
+        glob: true
+        path: themes/ghostty/*
 
     ~/.config/cava: config/cava
     ~/.config/ghostty: config/ghostty
