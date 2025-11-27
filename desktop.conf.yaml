@@ -93,6 +93,7 @@
     - xdg-desktop-portal-wlr
     - xdg-desktop-portal-hyprland
     - xorg-xhost
+    - xpadneo
     - yazi-nightly-bin
     - zoxide
     - zramswap
