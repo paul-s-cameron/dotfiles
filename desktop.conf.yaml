@@ -32,8 +32,10 @@
     - dua-cli
     - fastfetch
     - fd
+    - gcc
     - ghostty
     - gifski
+    - git
     - github-cli
     - gpu-screen-recorder
     - grim
@@ -46,6 +48,7 @@
     - kitty
     - krita
     - lazygit
+    - make
     - man-db
     - man-pages
     - mediainfo
@@ -55,6 +58,7 @@
     - mtools
     - mullvad-vpn-bin
     - nano
+    - neovim
     - noto-fonts
     - ouch
     - pipewire
@@ -81,9 +85,11 @@
     - swengine
     - swappy
     - thefuck
+    - tree-sitter-cli
     - timeshift
     - timeshift-autosnap
     - ttf-dejavu
+    - unzip
     - veracrypt
     - vim
     - visual-studio-code-bin
