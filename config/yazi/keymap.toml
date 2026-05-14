@@ -29,6 +29,11 @@ run = "cd ~/Pictures"
 desc = "Go to ~/Pictures"
 
 [[mgr.prepend_keymap]]
+on = [ "g", "P" ]
+run = "cd ~/Projects"
+desc = "Go to ~/Projects"
+
+[[mgr.prepend_keymap]]
 on = "<C-d>"
 run = "plugin diff"
 desc = "Diff the selected with the hovered file"
