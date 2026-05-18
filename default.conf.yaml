@@ -19,7 +19,7 @@
     - bitwarden
     - bluez
     - bluez-utils
-    - brave-origin-bin
+    - brave-origin-beta-bin
     - brightnessctl
     - btop
     - cava
@@ -96,7 +96,7 @@
     - xdg-desktop-portal-wlr
     - xdg-desktop-portal-hyprland
     - xorg-xhost
-    - xpadneo
+    - xpadneo-dkms
     - yazi
     - zoxide
     - zram-generator
