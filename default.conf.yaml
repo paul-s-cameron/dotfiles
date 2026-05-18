@@ -126,15 +126,16 @@
       glob: true
       path: themes/ghostty/*
 
+    ~/.config/btop: config/btop
     ~/.config/cava: config/cava
     ~/.config/ghostty: config/ghostty
     ~/.config/hypr: config/hypr
+    ~/.config/lazygit: config/lazygit
+    ~/.config/mpv: config/mpv
     ~/.config/qt6ct: config/qt6ct
     ~/.config/rofi: config/rofi
     ~/.config/waybar: config/waybar
     ~/.config/yazi: config/yazi
-    ~/.config/btop: config/btop
-    ~/.config/mpv: config/mpv
     ~/.config/nvim/lua: config/nvim/lua
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/electron-flags.conf: config/electron-flags.conf
