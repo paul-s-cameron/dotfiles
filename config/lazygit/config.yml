@@ -1,3 +1,4 @@
+promptToReturnFromSubprocess: false
+
 os:
-  edit: 'nvim {{filename}} >/dev/null'
-  editInTerminal: true
+  editPreset: 'nvim'
