@@ -1,5 +1,5 @@
 [bar]
-scale = 0.699999988079071
+scale = 0.7
 bg = "transparent"
 
 [[bar.layout]]
@@ -13,6 +13,7 @@ left = [
 ]
 center = [
     "updates",
+    "systray",
     "notifications",
 ]
 right = [
