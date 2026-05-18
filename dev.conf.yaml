@@ -11,12 +11,8 @@
       recursive: true
 
 - yay:
-    - neovim
     - fzf
     - lua
     - docker
     - mingw-w64-gcc
 
-- link:
-    ~/.config/nvim/lua: config/nvim/lua
-    ~/.config/nvim/init.lua: config/nvim/init.lua

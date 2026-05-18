@@ -1,25 +1,63 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
-if [ -z "$1" ]; then
-  echo "Usage: $0 <env>"
-  echo "Example: $0 dev"
+usage() {
+  echo "Usage: $0 <config-prefix> [config-prefix ...] [-- dotbot-args...]"
+  echo "Example: $0 default desktop dev"
+  echo "Example: $0 default desktop dev -- --only link"
+}
+
+if [ "$#" -eq 0 ]; then
+  usage
   exit 1
 fi
 
-ENV_NAME="$1"
-shift
-
-CONFIG="${ENV_NAME}.conf.yaml"
 DOTBOT_DIR="dotbot"
-
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+CONFIGS=()
+DOTBOT_ARGS=()
+
+# Treat all args before `--` as config prefixes.
+# Treat everything after `--` as args passed to dotbot.
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    --)
+      shift
+      DOTBOT_ARGS=("$@")
+      break
+      ;;
+    -*)
+      echo "Error: Dotbot args must come after --"
+      echo
+      usage
+      exit 1
+      ;;
+    *)
+      CONFIGS+=("$1.conf.yaml")
+      shift
+      ;;
+  esac
+done
 
 cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${BASEDIR}"
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}" --plugin-dir "${BASEDIR}/.plugins"
+git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${DOTBOT_DIR}"
+
+for CONFIG in "${CONFIGS[@]}"; do
+  if [ ! -f "${CONFIG}" ]; then
+    echo "Error: config file not found: ${CONFIG}"
+    exit 1
+  fi
+
+  echo "Running Dotbot config: ${CONFIG}"
+
+  "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" \
+    -d "${BASEDIR}" \
+    -c "${CONFIG}" \
+    --plugin-dir "${BASEDIR}/.plugins" \
+    "${DOTBOT_ARGS[@]}"
+done
