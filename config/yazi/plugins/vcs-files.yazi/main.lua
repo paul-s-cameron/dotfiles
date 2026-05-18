@@ -1,4 +1,4 @@
---- @since 25.5.28
+--- @since 26.1.22
 
 local root = ya.sync(function() return cx.active.current.cwd end)
 
@@ -15,7 +15,7 @@ local function entry()
 
 	local id = ya.id("ft")
 	local cwd = root:into_search("Git changes")
-	ya.emit("cd", { Url(cwd) })
+	ya.emit("cd", { Url(cwd), source = "search" })
 	ya.emit("update_files", { op = fs.op("part", { id = id, url = Url(cwd), files = {} }) })
 
 	local files = {}
@@ -27,7 +27,7 @@ local function entry()
 		end
 	end
 	ya.emit("update_files", { op = fs.op("part", { id = id, url = Url(cwd), files = files }) })
-	ya.emit("update_files", { op = fs.op("done", { id = id, url = cwd, cha = Cha { kind = 16 } }) })
+	ya.emit("update_files", { op = fs.op("done", { id = id, url = cwd, cha = Cha { mode = tonumber("100644", 8) } }) })
 end
 
 return { entry = entry }
