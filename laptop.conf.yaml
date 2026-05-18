@@ -13,5 +13,5 @@
       recursive: true
 
 - link:
-   ~/.config/hyprpanel/config.json: themes/hyprpanel/laptop.json
+    ~/.config/wayle/runtime.toml: themes/wayle/laptop.toml
 

@@ -1,0 +1,38 @@
+[bar]
+scale = 0.699999988079071
+bg = "transparent"
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+    "window-title",
+    "media",
+]
+center = [
+    "updates",
+    "notifications",
+]
+right = [
+    "network",
+    "bluetooth",
+    "hyprsunset",
+    "clock",
+    "volume",
+    "battery",
+]
+
+[styling]
+scale = 0.75
+
+[modules.hyprland-workspaces]
+display-mode = "none"
+app-icons-show = true
+active-indicator = "underline"
+border-show = true
+border-color = "border-accent"
+
+[modules.notification]
+popup-duration = 3000

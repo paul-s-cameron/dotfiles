@@ -135,6 +135,7 @@
     ~/.config/qt6ct: config/qt6ct
     ~/.config/rofi: config/rofi
     ~/.config/waybar: config/waybar
+    ~/.config/wayle: config/wayle
     ~/.config/yazi: config/yazi
     ~/.config/nvim/lua: config/nvim/lua
     ~/.config/nvim/init.lua: config/nvim/init.lua
