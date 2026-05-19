@@ -42,7 +42,8 @@ edit = [
 play = [
 	{ run = 'mpv --force-window %s1',                                  orphan = true,  for = "unix" },
 	{ run = 'losslesscut %s1',                                         orphan = true,  for = "unix", desc = "Cut video" },
-	{ run = 'ffmpeg -i %s1 "$(basename %s1 .${@##*.})_converted.gif',                 for = "unix", desc = "Convert to gif" },
+	{ run = 'ffmpeg -i %s1 -ss 00:00:00 -vframes 1 "$(basename %s1 | sed "s/\.[^.]*$//").png"', orphan = true,  for = "unix", desc = "Extract Thumbnail" },
+	{ run = 'ffmpeg -i %s1 "$(basename %s1 | sed "s/\.[^.]*$//")_converted.gif',                 for = "unix", desc = "Convert to gif" },
 	{ run = 'mkgif.sh %s1',                                                            for = "unix", desc = "Convert to optimized gif" },
 	{ run = '''mediainfo %s1; echo "Press enter to exit"; read _''',   block = true,   desc = "Show media info", for = "unix" },
 ]
