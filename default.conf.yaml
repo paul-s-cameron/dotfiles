@@ -15,6 +15,7 @@
 - yay:
     - 7zip
     - alsa-utils
+    - awww
     - bat
     - bitwarden
     - bluez
