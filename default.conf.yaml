@@ -127,6 +127,7 @@
       glob: true
       path: themes/ghostty/*
 
+    ~/.config/autowww: config/autowww
     ~/.config/btop: config/btop
     ~/.config/cava: config/cava
     ~/.config/ghostty: config/ghostty
@@ -141,7 +142,6 @@
     ~/.config/nvim/lua: config/nvim/lua
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/electron-flags.conf: config/electron-flags.conf
-    ~/.config/systemd/user/hyprpanel.service: services/hyprpanel.service
     ~/.config/Vencord/settings/settings.json: Vencord/settings/settings.json
     ~/.config/Vencord/themes: Vencord/themes
 

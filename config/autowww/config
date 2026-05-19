@@ -1,0 +1,14 @@
+# autowww watches a command for wallpaper changes and runs executable hooks.
+#
+# The command must print the current wallpaper value to stdout. For example:
+# wallpaper_command=awww query | sed -n 's/^.*currently displaying: //p'
+#
+# Hooks are executable files in hooks_dir. They receive:
+# AUTOWWW_WALLPAPER: current wallpaper value
+# AUTOWWW_PREVIOUS_WALLPAPER: previous wallpaper value, empty on startup
+# AUTOWWW_CHANGED: 1 when the value changed, 0 for an optional startup run
+
+wallpaper_command=awww query | sed -n 's/^.*currently displaying: image: //p'
+hooks_dir=~/.config/autowww/hooks
+interval_ms=1000
+run_on_start=true
