@@ -1,6 +1,6 @@
 [bar]
-scale = 0.7
 bg = "transparent"
+background-opacity = 0
 
 [[bar.layout]]
 monitor = "*"
@@ -10,8 +10,12 @@ left = [
     "hyprland-workspaces",
     "window-title",
     "media",
+    "cpu",
+    "ram",
 ]
 center = [
+    "weather",
+    "clock",
     "updates",
     "systray",
     "notifications",
@@ -20,13 +24,13 @@ right = [
     "network",
     "bluetooth",
     "hyprsunset",
-    "clock",
     "volume",
     "battery",
 ]
 
 [styling]
-scale = 0.75
+theme-provider = "pywal"
+matugen-contrast = 0.04938271604938271
 
 [modules.hyprland-workspaces]
 display-mode = "none"
@@ -37,3 +41,7 @@ border-color = "border-accent"
 
 [modules.notification]
 popup-duration = 3000
+
+[wallpaper]
+cycling-enabled = true
+cycling-directory = "/home/tuples/Pictures/wallpapers/"
