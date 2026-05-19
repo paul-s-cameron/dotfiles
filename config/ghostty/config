@@ -46,6 +46,7 @@ keybind = ctrl+w=close_tab
 keybind = ctrl+left=next_tab
 keybind = ctrl+right=last_tab
 
+font-size = 18
 theme = Catppuccin Mocha
 window-decoration = false
 mouse-hide-while-typing = true
