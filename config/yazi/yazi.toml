@@ -214,6 +214,7 @@ prepend_previewers = [
 	{ url = "*.rst", run = "rich-preview"},
 	{ url = "*.ipynb", run = "rich-preview"},
 	{ url = "*.json", run = "rich-preview"},
+	{ url = "*.conf", run = "rich-preview"},
 ]
 
 [input]
