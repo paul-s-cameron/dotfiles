@@ -63,6 +63,7 @@
     - neovim
     - noto-fonts
     - ouch
+    - pacsea-bin
     - pipewire
     - pipewire-pulse
     - pkg-config
@@ -91,6 +92,7 @@
     - ttf-dejavu
     - unzip
     - veracrypt
+    - wallust
     - wf-recorder
     - wl-clip-persist
     - xdg-desktop-portal-gtk
