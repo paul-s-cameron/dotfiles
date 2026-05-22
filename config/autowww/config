@@ -12,3 +12,4 @@ wallpaper_command=awww query | sed -n 's/^.*currently displaying: image: //p'
 hooks_dir=~/.config/autowww/hooks
 interval_ms=1000
 run_on_start=true
+state_file=~/.local/state/autowww/last_wallpaper
