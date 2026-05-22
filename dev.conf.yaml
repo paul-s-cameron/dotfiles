@@ -15,4 +15,5 @@
     - lua
     - docker
     - mingw-w64-gcc
+    - markdown-oxide
 
