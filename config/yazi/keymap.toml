@@ -11,7 +11,7 @@ desc = "Go to ~/Documents"
 [[mgr.prepend_keymap]]
 on = [ "g", "D" ]
 run = "cd ~/Downloads"
-desc = "Go to ~/Documents"
+desc = "Go to ~/Downloads"
 
 [[mgr.prepend_keymap]]
 on = [ "g", "c" ]
